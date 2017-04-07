@@ -1,0 +1,25 @@
+---
+
+name: sharon_oates
+version: 0.1.0
+license: MIT
+
+dependencies:
+  pg:
+    github: will/crystal-pg
+
+development_dependencies:
+  # This allows the `expect().to eq()` syntax.
+  spec2:
+    github: waterlink/spec2.cr
+
+  matchi:
+    github: fixcr/matchi
+
+  # This one is based on rspec-mocks, but it doesn't support `allow` yet.
+#  mock:
+#    github: porras/mock
+
+  # This one has `allow().to receive().and_return()` and `have_received`.
+  mocks:
+    github: waterlink/mocks.cr
